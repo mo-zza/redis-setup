@@ -105,6 +105,8 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+.vscode
+.idea
 
 # yaml file for Hasura CLI
 config.yaml
@@ -115,3 +117,5 @@ redis/redisdata
 # key
 .key/
 *.pem
+
+data
