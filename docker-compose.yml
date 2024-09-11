@@ -3,6 +3,7 @@ services:
     redis:
         container_name: redis
         image: redis:alpine
+        user: root
         platform: linux/amd64
         ports:
             - "${REDIS_PORT}:6379"
@@ -10,6 +11,7 @@ services:
             - ./data/redis-data:/data
     redis-insight:
         container_name: redis-insight
+        user: root
         image: redis/redisinsight:latest
         platform: linux/amd64
         ports:
